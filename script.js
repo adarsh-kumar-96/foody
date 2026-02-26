@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroBg = document.getElementById('hero-bg-container');
     if (heroBg) {
         // Path matches the generated artifact path
-        heroBg.style.backgroundImage = "url('../../brain/a0ec86c1-db00-4782-927c-38ed3c2c5ad4/hero_bg_1772132979699.png')";
+        heroBg.style.backgroundImage = "url('../hero_bg_1772132979699.png')";
 
         // Fallback styling if image fails to load
         heroBg.style.backgroundColor = "#111";
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const chefImg = document.getElementById('chef-img');
     if (chefImg) {
-        chefImg.src = "../../brain/a0ec86c1-db00-4782-927c-38ed3c2c5ad4/chef_cooking_1772133651193.png";
+        chefImg.src = "../chef_cooking_1772133651193.png";
     }
 
     const dishImg = document.getElementById('dish-img');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // We will assume it gets generated as signature_dish.png
         // In a real scenario you would dynamically get the actual output name or supply a placeholder.
         // For now, assigning a relative path for when it succeeds.
-        dishImg.src = "../../brain/a0ec86c1-db00-4782-927c-38ed3c2c5ad4/signature_dish_1772133929023.png";
+        dishImg.src = "../signature_dish_1772133929023.png";
         dishImg.alt = "Signature Dish";
 
         // Error handling fallback for image
@@ -118,3 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
